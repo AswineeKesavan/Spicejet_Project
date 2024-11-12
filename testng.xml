@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Utilities.TestNgListeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="chrome test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.BookingPageTest"><methods><include name="TestBookimgpage"/></methods></class>
+            <class name="tests.CheckInPageTest"><methods><include name="testCheckInPage"/></methods></class>
+            <class name="tests.CreateAccountPageTest"><methods><include name="CreateAcc"/></methods></class>
+            <class name="tests.FlightStatusPageTest"><methods><include name="testFlightPage"/></methods></class>
+            <class name="tests.FlightTripTest"><methods><include name="toFlightTrip"/><include name="toFlightTrip1"/><include name="validatingOneWayAndRoundWay"/></methods></class>
+            <class name="tests.LoginPageTest"><methods><include name="testLogin"/></methods></class>
+            <class name="tests.ManageBookingPageTest"><methods><include name="testManageBooking"/></methods></class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="firefox test">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="tests.BookingPageTest"><methods><include name="TestBookimgpage"/></methods></class>
+            <class name="tests.CheckInPageTest"><methods><include name="testCheckInPage"/></methods></class>
+            <class name="tests.CreateAccountPageTest"><methods><include name="CreateAcc"/></methods></class>
+            <class name="tests.FlightStatusPageTest"><methods><include name="testFlightPage"/></methods></class>
+            <class name="tests.FlightTripTest"><methods><include name="toFlightTrip"/><include name="toFlightTrip1"/><include name="validatingOneWayAndRoundWay"/></methods></class>
+            <class name="tests.LoginPageTest"><methods><include name="testLogin"/></methods></class>
+            <class name="tests.ManageBookingPageTest"><methods><include name="testManageBooking"/></methods></class>
+        </classes>
+    </test>
+</suite>
+
